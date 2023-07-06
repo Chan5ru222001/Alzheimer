@@ -21,7 +21,7 @@ with st.sidebar:
 @st.cache_resource(show_spinner="Loading..", experimental_allow_widgets=True)
 def model_():
     model = tf.keras.models.load_model(
-        "../Alzheimer.h5")
+        "/../Alzheimer.h5")
     return model
 
 

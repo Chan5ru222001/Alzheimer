@@ -5,12 +5,6 @@ from streamlit_lottie import st_lottie
 import requests
 from PIL import Image, ImageOps
 
-bg="""
-<style>
-[Streamlit\Alzheimer.hdf5]
-</style>
-"""
-
 @st.cache_resource(show_spinner="loading...")
 def load_lottie():
     r = requests.get("https://assets10.lottiefiles.com/packages/lf20_w51pcehl.json")
@@ -25,7 +19,7 @@ with st.sidebar:
 @st.cache_resource(show_spinner="Loading..", experimental_allow_widgets=True)
 def model_():
     model = tf.keras.models.load_model(
-        "../../Alzheimer.hdf5")
+        "pages/../Alzheimer.hdf5")
     return model
 
 

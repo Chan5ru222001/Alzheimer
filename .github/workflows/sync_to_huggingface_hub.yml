@@ -17,4 +17,4 @@ jobs:
       - name: Push to hub
         env:
           HF_TOKEN: ${{ secrets.HF_TOKEN }}
-        run: git push https://Chandru-g24:$HF_TOKEN@huggingface.co/spaces/Chandru-g24/Alzheimer-detection main
+        run: git push --force https://Chandru-g24:$HF_TOKEN@huggingface.co/spaces/Chandru-g24/Alzheimer-detection main

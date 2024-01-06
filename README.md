@@ -22,3 +22,8 @@ To attain this, I took the benchmark image data from the Kaggle repository. It c
 
 The developed model classifies the X-ray images of dementia with 96% accuracy.
 
+# Deployment
+
+For the ease of user interface, Deploy the ML model in Hugging face open-source platform using Streamlit UI. 
+https://huggingface.co/spaces/Chandru-g24/Alzheimer-detection 
+

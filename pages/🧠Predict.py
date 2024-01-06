@@ -3,7 +3,6 @@ import tensorflow as tf
 import numpy as np
 from streamlit_lottie import st_lottie
 import requests
-import cv2
 from PIL import Image, ImageOps
 
 hide_streamlit_style = """
@@ -45,7 +44,6 @@ def import_and_predict(image_data, model):
     size = (256, 256)
     image = ImageOps.fit(image_data, size)
     img = np.asarray(image).astype(np.float32)
-    img = cv2.resize(img, (256, 256))
     img = np.expand_dims(img, axis=0)
     img = img / 255.0  # Normalize the image
     img = np.asarray(img).astype(np.float32)

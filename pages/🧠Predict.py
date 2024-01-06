@@ -56,7 +56,7 @@ def import_and_predict(image_data, model):
 
 with col2:
     st.title("Discover Your Outcome")
-    file_ = st.file_uploader("Please upload the Brain X-ray image", type=['jpg','png','jpeg'])
+    file_ = st.file_uploader("Please upload the Brain X-ray image", type=['jpg','jpeg'])
     st.markdown("""___""")
 
 
